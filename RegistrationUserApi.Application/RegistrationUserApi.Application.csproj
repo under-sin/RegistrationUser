@@ -15,4 +15,8 @@
     <ProjectReference Include="..\RegistrationUserApi.Infra\RegistrationUserApi.Infra.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers" />
+  </ItemGroup>
+
 </Project>
