@@ -25,8 +25,9 @@ public class UpdateUser : Notifiable, ICommand
         AddNotifications(
             new Contract()
             .Requires()
-            .HasMinLen(Name, 3, "Name", "Nome inválido :/")
-            .IsEmail(Email, "E-mail", "E-mail inválid")
+            .HasMinLen(Name, 3, "Name", "Nome inválido")
+            .HasMinLen(Email, 15, "E-mail", "E-mail inválido")
+            .IsEmail(Email, "E-mail", "E-mail inválido")
         );
     }
 }

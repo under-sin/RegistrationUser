@@ -22,7 +22,7 @@ public class UserHandler :
 
     public ICommandResult Handle(CreateUser command)
     {
-        // Fail fisrt validate
+        // Fail fast validate
         command.Validate();
         if (command.Invalid)
             return new GenericCommandResult(false, "Erro ao tentar criar o usuário", command.Notifications);
@@ -35,7 +35,7 @@ public class UserHandler :
 
     public ICommandResult Handle(UpdateUser command)
     {
-        // Fail fisrt validate
+        // Fail fast validate
         command.Validate();
         if (command.Invalid)
             return new GenericCommandResult(false, "Erro ao tentar atualizar o usuário", command.Notifications);
@@ -50,7 +50,7 @@ public class UserHandler :
 
     public ICommandResult Handle(DeleteUser command)
     {
-        // Fail fisrt validate
+        // Fail fast validate
         command.Validate();
         if (command.Invalid)
             return new GenericCommandResult(false, "Erro ao tentar deletar o usuário", command.Notifications);

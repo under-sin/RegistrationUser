@@ -6,22 +6,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf729166-164d-499c-a42a-8b3d003659b9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RegistrationUserApi/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RegistrationUserApi.Application/Controllers/WeatherForecastController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RegistrationUserApi.Application/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RegistrationUserApi.Application/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RegistrationUserApi.Application/RegistrationUserApi.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RegistrationUserApi.Application/RegistrationUserApi.Application.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RegistrationUserApi.Application/WeatherForecast.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RegistrationUserApi.Domain/Class1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RegistrationUserApi.Domain/RegistrationUserApi.Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RegistrationUserApi.Domain/RegistrationUserApi.Domain.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RegistrationUserApi.Infra/Class1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RegistrationUserApi.Tests/UnitTest1.cs" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/RegistrationUserApi.Tests/CommandTests/CreateUserCommandTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RegistrationUserApi.Tests/CommandTests/DeleteUserCommandTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RegistrationUserApi.Tests/CommandTests/UpdateUserCommandTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RegistrationUserApi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RegistrationUserApi/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RegistrationUserApi.Domain/Commands/DeleteUser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RegistrationUserApi.Domain/Commands/DeleteUser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RegistrationUserApi.Domain/Commands/UpdateUser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RegistrationUserApi.Domain/Commands/UpdateUser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RegistrationUserApi.Domain/Handlers/UserHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RegistrationUserApi.Domain/Handlers/UserHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RegistrationUserApi.Domain/Repositories/IUserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RegistrationUserApi.Domain/Repositories/IUserRepository.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectId" id="2KUwNhxlB1Qxmloi4DDlowVp7NH" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -31,7 +37,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Color Scheme Font",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Language Defaults",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -82,16 +88,29 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674042435872</updated>
-      <workItem from="1674042437456" duration="151000" />
+      <workItem from="1674042437456" duration="1055000" />
+      <workItem from="1674086815711" duration="57000" />
+      <workItem from="1674124728990" duration="4510000" />
     </task>
+    <task id="LOCAL-00001" summary="Criando a camada de Domain, definindo as Entities, Commands, Handlers e Repositories">
+      <created>1674042671070</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674042671070</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Criando a camada de Domain, definindo as Entities, Commands, Handlers e Repositories" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criando a camada de Domain, definindo as Entities, Commands, Handlers e Repositories" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
