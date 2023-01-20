@@ -44,6 +44,6 @@ public class UserRepository : IUserRepository
 
     public IEnumerable<User> GetAll()
     {
-        return _context.Users.Where(UserQueries.GetAll);
+        return _context.Users;
     }
 }

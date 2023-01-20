@@ -5,12 +5,9 @@
     <projectFile profileName="RegistrationUserApi.Application">RegistrationUserApi.Application/RegistrationUserApi.Application.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf729166-164d-499c-a42a-8b3d003659b9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/RegistrationUserApi.Infra/Context/DataContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RegistrationUserApi.Infra/Repositories/UserRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RegistrationUserApi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RegistrationUserApi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RegistrationUserApi.Domain/RegistrationUserApi.Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RegistrationUserApi.Domain/RegistrationUserApi.Domain.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RegistrationUserApi.Infra/RegistrationUserApi.Infra.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RegistrationUserApi.Infra/RegistrationUserApi.Infra.csproj" afterDir="false" />
+    <list default="true" id="cf729166-164d-499c-a42a-8b3d003659b9" name="Changes" comment="Criando camada de infra">
+      <change afterPath="$PROJECT_DIR$/RegistrationUserApi.Tests/QueryTests/UserQueryTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RegistrationUserApi.Tests/Repositories/FakeUserRepository.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,23 +26,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Stacktrace",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Stacktrace&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\ander\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\ander\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\ander\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\ander\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\ander\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\ander\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.RegistrationUserApi.Application">
     <configuration name="RegistrationUserApi.Application" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/RegistrationUserApi.Application/RegistrationUserApi.Application.csproj" />
@@ -93,6 +90,7 @@
       <workItem from="1674161520939" duration="92000" />
       <workItem from="1674170771491" duration="2115000" />
       <workItem from="1674210885835" duration="2164000" />
+      <workItem from="1674213280351" duration="1746000" />
     </task>
     <task id="LOCAL-00001" summary="Criando a camada de Domain, definindo as Entities, Commands, Handlers e Repositories">
       <created>1674042671070</created>
@@ -108,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674130038304</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Criando camada de infra">
+      <created>1674214573746</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674214573746</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,7 +125,27 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Criando a camada de Domain, definindo as Entities, Commands, Handlers e Repositories" />
     <MESSAGE value="Criando os tests para os commands" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criando os tests para os commands" />
+    <MESSAGE value="Criando camada de infra" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criando camada de infra" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/RegistrationUserApi.Tests/QueryTests/UserQueryTests.cs</url>
+          <line>24</line>
+          <properties documentPath="C:\program1\api-aspnet-core\RegistrationUserApi\RegistrationUserApi.Tests\QueryTests\UserQueryTests.cs" initialLine="24" containingFunctionPresentation="method 'Dado_a_consulta_deve_retornar_todos_os_cinco_usuarios'">
+            <startOffsets>
+              <option value="728" />
+            </startOffsets>
+            <endOffsets>
+              <option value="788" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
