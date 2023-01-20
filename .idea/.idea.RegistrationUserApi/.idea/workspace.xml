@@ -6,14 +6,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf729166-164d-499c-a42a-8b3d003659b9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/RegistrationUserApi.Tests/CommandTests/CreateUserCommandTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RegistrationUserApi.Tests/CommandTests/DeleteUserCommandTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RegistrationUserApi.Tests/CommandTests/UpdateUserCommandTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RegistrationUserApi.Infra/Context/DataContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RegistrationUserApi.Infra/Repositories/UserRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RegistrationUserApi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RegistrationUserApi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RegistrationUserApi.Domain/Commands/DeleteUser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RegistrationUserApi.Domain/Commands/DeleteUser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RegistrationUserApi.Domain/Commands/UpdateUser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RegistrationUserApi.Domain/Commands/UpdateUser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RegistrationUserApi.Domain/Handlers/UserHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RegistrationUserApi.Domain/Handlers/UserHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RegistrationUserApi.Domain/Repositories/IUserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RegistrationUserApi.Domain/Repositories/IUserRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RegistrationUserApi.Domain/RegistrationUserApi.Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RegistrationUserApi.Domain/RegistrationUserApi.Domain.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RegistrationUserApi.Infra/RegistrationUserApi.Infra.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RegistrationUserApi.Infra/RegistrationUserApi.Infra.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +34,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Language Defaults",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Stacktrace",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -90,7 +88,11 @@
       <updated>1674042435872</updated>
       <workItem from="1674042437456" duration="1055000" />
       <workItem from="1674086815711" duration="57000" />
-      <workItem from="1674124728990" duration="4510000" />
+      <workItem from="1674124728990" duration="4622000" />
+      <workItem from="1674158561104" duration="155000" />
+      <workItem from="1674161520939" duration="92000" />
+      <workItem from="1674170771491" duration="2115000" />
+      <workItem from="1674210885835" duration="2164000" />
     </task>
     <task id="LOCAL-00001" summary="Criando a camada de Domain, definindo as Entities, Commands, Handlers e Repositories">
       <created>1674042671070</created>
@@ -99,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674042671070</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Criando os tests para os commands">
+      <created>1674130038304</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674130038304</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,7 +119,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Criando a camada de Domain, definindo as Entities, Commands, Handlers e Repositories" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criando a camada de Domain, definindo as Entities, Commands, Handlers e Repositories" />
+    <MESSAGE value="Criando os tests para os commands" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criando os tests para os commands" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
