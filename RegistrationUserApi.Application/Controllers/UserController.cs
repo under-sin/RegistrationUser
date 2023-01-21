@@ -7,21 +7,51 @@ using RegistrationUserApi.Domain.Repositories;
 namespace RegistrationUserApi.Application.Controllers;
 
 [ApiController]
-[Route("v1/user")]
+
 public class UserController : ControllerBase
 {
     
-    [HttpGet("")]
+    [HttpGet("v1/user")]
     public IEnumerable<User> GetAll(
         [FromServices] IUserRepository repository    
     )
     {
         return repository.GetAll();
     }
-    
-    [HttpPost("")]
+
+    [HttpGet("v1/user/{id:guid}/{email}")]
+    public User GetById(
+        [FromRoute] Guid id,
+        [FromRoute] string email,
+        [FromServices] IUserRepository repository    
+    )
+    {
+        return repository.GetById(id, email);
+    }
+
+    [HttpPost("v1/user")]
     public GenericCommandResult Create(
         [FromBody] CreateUser command,
+        [FromServices] UserHandler handler    
+    )
+    {
+        return (GenericCommandResult)handler.Handle(command);
+    }
+    
+        
+    [HttpPut("v1/user")]
+    public GenericCommandResult Upate(
+        [FromBody] UpdateUser command,
+        [FromServices] UserHandler handler    
+    )
+    {
+        return (GenericCommandResult)handler.Handle(command);
+    }
+    
+            
+    [HttpDelete("v1/user")]
+    public GenericCommandResult Delete(
+        [FromBody] DeleteUser command,
         [FromServices] UserHandler handler    
     )
     {

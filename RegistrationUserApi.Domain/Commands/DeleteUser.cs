@@ -22,7 +22,7 @@ public class DeleteUser : Notifiable, ICommand
         AddNotifications(
             new Contract()
             .Requires()
-            .HasMinLen(Email, 15, "E-mail", "E-mail inválido")
+            .HasMinLen(Email, 8, "E-mail", "E-mail inválido")
             .IsEmail(Email, "E-mail", "E-mail inválido")
         );
     }
